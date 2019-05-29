@@ -8,6 +8,7 @@
   "homepage": "https://nexus.js.org",
   "scripts": {
     "dev": "yarn link-examples && tsc -w",
+    "api-docs": "typedoc --out docs/code --theme markdown --mdDocusaurus src/",
     "test": "jest",
     "test:ci": "jest -i",
     "build": "tsc && prettier --write 'dist/**/*.ts'",
@@ -36,7 +37,9 @@
     "url": "https://github.com/tgriesser"
   },
   "dependencies": {
-    "tslib": "^1.9.3"
+    "tslib": "^1.9.3",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.2.1"
   },
   "devDependencies": {
     "@types/graphql": "^14.2.0",
